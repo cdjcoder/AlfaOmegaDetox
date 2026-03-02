@@ -1286,7 +1286,7 @@ body {
 
 .zelle-reserve-box {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  grid-template-columns: 1fr;
   gap: 16px;
   align-items: center;
   background: linear-gradient(145deg, #f5f3ff 0%, #eef2ff 100%);
@@ -1336,7 +1336,8 @@ body {
   overflow: hidden;
   border: 1px solid rgba(99, 102, 241, .26);
   background: rgba(255,255,255,.7);
-  min-height: 130px;
+  min-height: 320px;
+  padding: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
