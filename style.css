@@ -1520,6 +1520,38 @@ body {
   text-align: center;
 }
 
+/* Floating back-to-top button */
+.back-to-top {
+  position: fixed;
+  right: 22px;
+  bottom: 24px;
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--em-600);
+  color: #fff;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 12px 28px rgba(5,150,105,.30);
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: opacity .2s, transform .2s, background .2s;
+  z-index: 920;
+}
+.back-to-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.back-to-top:hover { background: var(--em-700); }
+
 /* ============================================================
    ANIMATIONS
 ============================================================ */
@@ -1629,6 +1661,13 @@ body {
   .hero-stats     { flex-wrap: wrap; gap: 8px; }
   .hero-stat      { padding: 0 16px; }
   .nav-cta        { display: none; }
+  .back-to-top {
+    right: 16px;
+    bottom: 18px;
+    width: 48px;
+    height: 48px;
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1650,6 +1689,13 @@ body {
   .zelle-reserve-image-wrap {
     min-height: 210px;
     padding: 4px;
+  }
+  .back-to-top {
+    right: 12px;
+    bottom: 14px;
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
   }
 }
 
