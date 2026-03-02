@@ -422,24 +422,120 @@ const INGREDIENTS = {
 
 const LIVER_SYMPTOMS = {
   en: [
-    { i: "🔋", t: "Persistent Fatigue", d: "Even after a full night's sleep, you wake up tired. A sluggish liver equals a sluggish you." },
-    { i: "🧠", t: "Brain Fog", d: "A liver that can't clear toxins allows compounds to reach the brain, dulling mental clarity." },
-    { i: "🤢", t: "Bloating & Discomfort", d: "When bile slows, fats aren't broken down properly — leading to bloating, nausea, and irregularity." },
-    { i: "⚖️", t: "Unexplained Weight Gain", d: "The liver regulates fat metabolism. When overwhelmed, fat storage — especially around the midsection — increases." },
-    { i: "🧴", t: "Dull or Congested Skin", d: "When the liver can't keep up, toxins exit through pores as acne, rashes, or loss of natural glow." },
-    { i: "🩸", t: "High Cholesterol", d: "The liver produces and regulates cholesterol. A burdened liver often means imbalanced lipid levels." },
-    { i: "🤧", t: "Weakened Immunity", d: "Over 70% of your immune system is connected to the gut and liver. Declining liver function = declining immunity." },
-    { i: "😤", t: "Hormonal Imbalance", d: "The liver clears excess hormones. When it can't, oestrogen dominance affects mood, sleep, and energy." }
+    {
+      i: "🔋",
+      t: "Persistent Fatigue",
+      d: "Even after a full night's sleep, you wake up tired. A sluggish liver equals a sluggish you.",
+      img: "https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=1200&q=80",
+      alt: "Person resting with visible exhaustion on a couch"
+    },
+    {
+      i: "🧠",
+      t: "Brain Fog",
+      d: "A liver that can't clear toxins allows compounds to reach the brain, dulling mental clarity.",
+      img: "https://images.unsplash.com/photo-1603398938378-e54eab446dde?auto=format&fit=crop&w=1200&q=80",
+      alt: "Person holding their head while feeling mentally overwhelmed"
+    },
+    {
+      i: "🤢",
+      t: "Bloating & Discomfort",
+      d: "When bile slows, fats aren't broken down properly — leading to bloating, nausea, and irregularity.",
+      img: "https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?auto=format&fit=crop&w=1200&q=80",
+      alt: "Person clutching stomach in discomfort"
+    },
+    {
+      i: "⚖️",
+      t: "Unexplained Weight Gain",
+      d: "The liver regulates fat metabolism. When overwhelmed, fat storage — especially around the midsection — increases.",
+      img: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
+      alt: "Midsection body-measurement scene with tape indicating weight changes"
+    },
+    {
+      i: "🧴",
+      t: "Dull or Congested Skin",
+      d: "When the liver can't keep up, toxins exit through pores as acne, rashes, or loss of natural glow.",
+      img: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=1200&q=80",
+      alt: "Close-up portrait highlighting facial skin texture concerns"
+    },
+    {
+      i: "🩸",
+      t: "High Cholesterol",
+      d: "The liver produces and regulates cholesterol. A burdened liver often means imbalanced lipid levels.",
+      img: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80",
+      alt: "Medical blood-testing setup and clinical analysis context"
+    },
+    {
+      i: "🤧",
+      t: "Weakened Immunity",
+      d: "Over 70% of your immune system is connected to the gut and liver. Declining liver function = declining immunity.",
+      img: "https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1200&q=80",
+      alt: "Person showing cold or flu-like symptoms while recovering at home"
+    },
+    {
+      i: "😤",
+      t: "Hormonal Imbalance",
+      d: "The liver clears excess hormones. When it can't, oestrogen dominance affects mood, sleep, and energy.",
+      img: "https://images.unsplash.com/photo-1535914254981-b5012eebbd15?auto=format&fit=crop&w=1200&q=80",
+      alt: "Woman sitting thoughtfully, reflecting emotional and hormonal stress"
+    }
   ],
   es: [
-    { i: "🔋", t: "Fatiga Persistente", d: "Incluso después de dormir bien, te despiertas cansado. Un hígado perezoso equivale a un tú perezoso." },
-    { i: "🧠", t: "Niebla Mental", d: "Un hígado que no puede eliminar toxinas permite que los compuestos lleguen al cerebro, opacando la claridad mental." },
-    { i: "🤢", t: "Hinchazón y Malestar", d: "Cuando la bilis se ralentiza, las grasas no se descomponen correctamente — lo que lleva a hinchazón, náuseas e irregularidad." },
-    { i: "⚖️", t: "Aumento de Peso Inexplicable", d: "El hígado regula el metabolismo de las grasas. Cuando está sobrecargado, el almacenamiento de grasa — especialmente alrededor de la cintura — aumenta." },
-    { i: "🧴", t: "Piel Opaca o Congestionada", d: "Cuando el hígado no puede mantenerse al día, las toxinas salen por los poros como acné, erupciones o pérdida del brillo natural." },
-    { i: "🩸", t: "Colesterol Alto", d: "El hígado produce y regula el colesterol. Un hígado sobrecargado a menudo significa niveles de lípidos desequilibrados." },
-    { i: "🤧", t: "Inmunidad Debilitada", d: "Más del 70% de tu sistema inmunológico está conectado al intestino y al hígado. La disminución de la función hepática = disminución de la inmunidad." },
-    { i: "😤", t: "Desequilibrio Hormonal", d: "El hígado elimina el exceso de hormonas. Cuando no puede, el dominio de estrógenos afecta el estado de ánimo, el sueño y la energía." }
+    {
+      i: "🔋",
+      t: "Fatiga Persistente",
+      d: "Incluso después de dormir bien, te despiertas cansado. Un hígado perezoso equivale a un tú perezoso.",
+      img: "https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=1200&q=80",
+      alt: "Persona descansando con señales visibles de agotamiento en un sofá"
+    },
+    {
+      i: "🧠",
+      t: "Niebla Mental",
+      d: "Un hígado que no puede eliminar toxinas permite que los compuestos lleguen al cerebro, opacando la claridad mental.",
+      img: "https://images.unsplash.com/photo-1603398938378-e54eab446dde?auto=format&fit=crop&w=1200&q=80",
+      alt: "Persona sosteniéndose la cabeza por saturación mental"
+    },
+    {
+      i: "🤢",
+      t: "Hinchazón y Malestar",
+      d: "Cuando la bilis se ralentiza, las grasas no se descomponen correctamente — lo que lleva a hinchazón, náuseas e irregularidad.",
+      img: "https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?auto=format&fit=crop&w=1200&q=80",
+      alt: "Persona sujetando el abdomen por malestar digestivo"
+    },
+    {
+      i: "⚖️",
+      t: "Aumento de Peso Inexplicable",
+      d: "El hígado regula el metabolismo de las grasas. Cuando está sobrecargado, el almacenamiento de grasa — especialmente alrededor de la cintura — aumenta.",
+      img: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
+      alt: "Escena de medición corporal con cinta métrica que refleja cambios de peso"
+    },
+    {
+      i: "🧴",
+      t: "Piel Opaca o Congestionada",
+      d: "Cuando el hígado no puede mantenerse al día, las toxinas salen por los poros como acné, erupciones o pérdida del brillo natural.",
+      img: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=1200&q=80",
+      alt: "Primer plano de rostro resaltando preocupaciones de textura en la piel"
+    },
+    {
+      i: "🩸",
+      t: "Colesterol Alto",
+      d: "El hígado produce y regula el colesterol. Un hígado sobrecargado a menudo significa niveles de lípidos desequilibrados.",
+      img: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80",
+      alt: "Contexto clínico de análisis sanguíneo y control médico"
+    },
+    {
+      i: "🤧",
+      t: "Inmunidad Debilitada",
+      d: "Más del 70% de tu sistema inmunológico está conectado al intestino y al hígado. La disminución de la función hepática = disminución de la inmunidad.",
+      img: "https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1200&q=80",
+      alt: "Persona con síntomas de resfriado o gripe en recuperación"
+    },
+    {
+      i: "😤",
+      t: "Desequilibrio Hormonal",
+      d: "El hígado elimina el exceso de hormonas. Cuando no puede, el dominio de estrógenos afecta el estado de ánimo, el sueño y la energía.",
+      img: "https://images.unsplash.com/photo-1535914254981-b5012eebbd15?auto=format&fit=crop&w=1200&q=80",
+      alt: "Mujer pensativa reflejando carga emocional y estrés hormonal"
+    }
   ]
 };
 
