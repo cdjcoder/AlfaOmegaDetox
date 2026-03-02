@@ -1278,6 +1278,75 @@ body {
   align-items: start;
 }
 .order-subtext { font-size: 14px; color: var(--gr-500); margin-bottom: 28px; line-height: 1.5; }
+.order-subtext-secondary {
+  margin-top: -18px;
+  margin-bottom: 22px;
+  color: var(--gr-600);
+}
+
+.zelle-reserve-box {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  gap: 16px;
+  align-items: center;
+  background: linear-gradient(145deg, #f5f3ff 0%, #eef2ff 100%);
+  border: 1px solid #ddd6fe;
+  border-radius: var(--r-lg);
+  padding: 18px;
+  margin-bottom: 22px;
+}
+.zelle-reserve-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.zelle-reserve-title {
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: #5b21b6;
+}
+.zelle-reserve-text {
+  font-size: 13px;
+  color: var(--gr-700);
+  line-height: 1.5;
+}
+.zelle-reserve-phone {
+  display: inline-flex;
+  width: fit-content;
+  font-size: 20px;
+  font-weight: 800;
+  color: #312e81;
+  letter-spacing: .01em;
+  text-decoration: none;
+}
+.zelle-reserve-phone:hover { text-decoration: underline; }
+.zelle-reserve-site {
+  display: inline-flex;
+  width: fit-content;
+  font-size: 13px;
+  font-weight: 700;
+  color: #4338ca;
+  text-decoration: none;
+}
+.zelle-reserve-site:hover { text-decoration: underline; }
+.zelle-reserve-image-wrap {
+  border-radius: var(--r-md);
+  overflow: hidden;
+  border: 1px solid rgba(99, 102, 241, .26);
+  background: rgba(255,255,255,.7);
+  min-height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.zelle-reserve-image-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .jotform-embed-wrap {
   background: #fff;
   border: 1px solid var(--gr-200);
@@ -1551,6 +1620,7 @@ body {
   .results-grid   { grid-template-columns: 1fr; }
   .bigger-cols    { grid-template-columns: 1fr; }
   .form-row       { grid-template-columns: 1fr; }
+  .zelle-reserve-box { grid-template-columns: 1fr; }
   .hero-h1        { font-size: clamp(42px, 10vw, 70px); }
   .hero-stats     { flex-wrap: wrap; gap: 8px; }
   .hero-stat      { padding: 0 16px; }
