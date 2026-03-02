@@ -659,6 +659,26 @@ body {
   pointer-events: none;
 }
 #liver-section .container { position: relative; z-index: 1; }
+#kidney-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse 44% 34% at 12% 14%, rgba(59,130,246,.20) 0%, transparent 72%),
+    radial-gradient(ellipse 36% 28% at 92% 8%, rgba(14,165,233,.20) 0%, transparent 75%),
+    linear-gradient(180deg, #eff6ff 0%, #e0f2fe 46%, #f8fafc 100%);
+}
+#kidney-section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1800&q=80");
+  background-size: cover;
+  background-position: center;
+  opacity: .10;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+#kidney-section .container { position: relative; z-index: 1; }
 
 .symptoms-grid {
   display: grid;
@@ -680,17 +700,29 @@ body {
   box-shadow: var(--shadow-md);
   border-color: var(--em-200);
 }
-.symptom-card-liver {
+.symptom-card-liver,
+.symptom-card-kidney {
   display: block;
   padding: 0;
   background: #111827;
+}
+.symptom-card-liver {
   border: 1px solid rgba(248,113,113,.38);
   box-shadow: 0 12px 30px rgba(127,29,29,.22);
+}
+.symptom-card-kidney {
+  border: 1px solid rgba(59,130,246,.42);
+  box-shadow: 0 12px 30px rgba(30,64,175,.24);
 }
 .symptom-card-liver:hover {
   transform: translateY(-6px);
   box-shadow: 0 18px 44px rgba(127,29,29,.28);
   border-color: rgba(251,146,60,.7);
+}
+.symptom-card-kidney:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 44px rgba(30,64,175,.30);
+  border-color: rgba(56,189,248,.78);
 }
 .symptom-media {
   position: relative;
@@ -705,11 +737,17 @@ body {
   display: block;
   transition: transform .7s ease;
 }
-.symptom-card-liver:hover .symptom-media img { transform: scale(1.08); }
+.symptom-card-liver:hover .symptom-media img,
+.symptom-card-kidney:hover .symptom-media img { transform: scale(1.08); }
 .symptom-media-overlay {
   position: absolute;
   inset: 0;
+}
+.symptom-card-liver .symptom-media-overlay {
   background: linear-gradient(180deg, rgba(17,24,39,.06) 10%, rgba(17,24,39,.68) 100%);
+}
+.symptom-card-kidney .symptom-media-overlay {
+  background: linear-gradient(180deg, rgba(15,23,42,.08) 8%, rgba(30,58,138,.72) 100%);
 }
 .symptom-icon-badge {
   position: absolute;
@@ -725,7 +763,7 @@ body {
   background: rgba(255,255,255,.96);
   box-shadow: 0 6px 18px rgba(0,0,0,.24);
 }
-.symptom-liver-body { padding: 18px 20px 22px; }
+.symptom-rich-body { padding: 18px 20px 22px; }
 .symptom-card-liver .symptom-title {
   color: #fff1f2;
   font-size: 16px;
@@ -733,6 +771,16 @@ body {
 }
 .symptom-card-liver .symptom-desc {
   color: rgba(255,255,255,.82);
+  font-size: 13.5px;
+  line-height: 1.62;
+}
+.symptom-card-kidney .symptom-title {
+  color: #eff6ff;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.symptom-card-kidney .symptom-desc {
+  color: rgba(224,242,254,.92);
   font-size: 13.5px;
   line-height: 1.62;
 }

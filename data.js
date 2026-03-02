@@ -541,20 +541,92 @@ const LIVER_SYMPTOMS = {
 
 const KIDNEY_SYMPTOMS = {
   en: [
-    { i: "💧", t: "Fluid Retention & Puffiness", d: "Swollen ankles, puffy eyes, and a waterlogged heaviness signal kidneys aren't clearing fluid efficiently." },
-    { i: "🩺", t: "Rising Blood Pressure", d: "The kidneys regulate blood pressure via fluid and electrolyte balance. Struggling kidneys push it higher." },
-    { i: "😴", t: "Chronic Fatigue", d: "Kidneys produce erythropoietin for red blood cell production. Reduced function means less oxygen throughout." },
-    { i: "🔩", t: "Electrolyte Imbalances", d: "Sodium, potassium, and magnesium dysregulation affects heart rhythm, nerve signalling, and muscle contraction." },
-    { i: "🦴", t: "Joint Discomfort", d: "Poor uric acid clearance by the kidneys is directly linked to joint pain and gout-like conditions." },
-    { i: "🌑", t: "Dark Under-Eye Circles", d: "A tell-tale sign across traditional medicine systems that kidney function needs attention." }
+    {
+      i: "💧",
+      t: "Fluid Retention & Puffiness",
+      d: "Swollen ankles, puffy eyes, and a waterlogged heaviness signal kidneys aren't clearing fluid efficiently.",
+      img: "https://images.unsplash.com/photo-1595488711748-f1f0f8f0b3ca?auto=format&fit=crop&w=1200&q=80",
+      alt: "Close-up portrait emphasizing facial puffiness and fluid retention"
+    },
+    {
+      i: "🩺",
+      t: "Rising Blood Pressure",
+      d: "The kidneys regulate blood pressure via fluid and electrolyte balance. Struggling kidneys push it higher.",
+      img: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=1200&q=80",
+      alt: "Healthcare professional checking blood pressure in a clinical setting"
+    },
+    {
+      i: "😴",
+      t: "Chronic Fatigue",
+      d: "Kidneys produce erythropoietin for red blood cell production. Reduced function means less oxygen throughout.",
+      img: "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1200&q=80",
+      alt: "Person lying down in exhaustion showing chronic fatigue"
+    },
+    {
+      i: "🔩",
+      t: "Electrolyte Imbalances",
+      d: "Sodium, potassium, and magnesium dysregulation affects heart rhythm, nerve signalling, and muscle contraction.",
+      img: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80",
+      alt: "Clinical monitoring equipment and lab context for electrolyte balance"
+    },
+    {
+      i: "🦴",
+      t: "Joint Discomfort",
+      d: "Poor uric acid clearance by the kidneys is directly linked to joint pain and gout-like conditions.",
+      img: "https://images.unsplash.com/photo-1544717302-de2939b7ef71?auto=format&fit=crop&w=1200&q=80",
+      alt: "Person gripping a painful knee joint"
+    },
+    {
+      i: "🌑",
+      t: "Dark Under-Eye Circles",
+      d: "A tell-tale sign across traditional medicine systems that kidney function needs attention.",
+      img: "https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=1200&q=80",
+      alt: "Close-up portrait highlighting dark circles under the eyes"
+    }
   ],
   es: [
-    { i: "💧", t: "Retención de Líquidos e Hinchazón", d: "Los tobillos hinchados, los ojos hinchados y la pesadez anegada indican que los riñones no están eliminando el líquido eficientemente." },
-    { i: "🩺", t: "Presión Arterial Elevada", d: "Los riñones regulan la presión arterial mediante el equilibrio de líquidos y electrolitos. Los riñones con dificultades la elevan aún más." },
-    { i: "😴", t: "Fatiga Crónica", d: "Los riñones producen eritropoyetina para la producción de glóbulos rojos. La función reducida significa menos oxígeno en todo el cuerpo." },
-    { i: "🔩", t: "Desequilibrios Electrolíticos", d: "La desregulación de sodio, potasio y magnesio afecta el ritmo cardíaco, la señalización nerviosa y la contracción muscular." },
-    { i: "🦴", t: "Malestar Articular", d: "La deficiente eliminación de ácido úrico por parte de los riñones está directamente relacionada con el dolor articular y condiciones similares a la gota." },
-    { i: "🌑", t: "Ojeras Oscuras", d: "Una señal reveladora en los sistemas de medicina tradicional de que la función renal necesita atención." }
+    {
+      i: "💧",
+      t: "Retención de Líquidos e Hinchazón",
+      d: "Los tobillos hinchados, los ojos hinchados y la pesadez anegada indican que los riñones no están eliminando el líquido eficientemente.",
+      img: "https://images.unsplash.com/photo-1595488711748-f1f0f8f0b3ca?auto=format&fit=crop&w=1200&q=80",
+      alt: "Retrato en primer plano que enfatiza hinchazón facial y retención de líquidos"
+    },
+    {
+      i: "🩺",
+      t: "Presión Arterial Elevada",
+      d: "Los riñones regulan la presión arterial mediante el equilibrio de líquidos y electrolitos. Los riñones con dificultades la elevan aún más.",
+      img: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=1200&q=80",
+      alt: "Profesional de salud midiendo la presión arterial en contexto clínico"
+    },
+    {
+      i: "😴",
+      t: "Fatiga Crónica",
+      d: "Los riñones producen eritropoyetina para la producción de glóbulos rojos. La función reducida significa menos oxígeno en todo el cuerpo.",
+      img: "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1200&q=80",
+      alt: "Persona recostada por agotamiento, reflejando fatiga crónica"
+    },
+    {
+      i: "🔩",
+      t: "Desequilibrios Electrolíticos",
+      d: "La desregulación de sodio, potasio y magnesio afecta el ritmo cardíaco, la señalización nerviosa y la contracción muscular.",
+      img: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80",
+      alt: "Equipo de monitoreo clínico y laboratorio asociado al equilibrio electrolítico"
+    },
+    {
+      i: "🦴",
+      t: "Malestar Articular",
+      d: "La deficiente eliminación de ácido úrico por parte de los riñones está directamente relacionada con el dolor articular y condiciones similares a la gota.",
+      img: "https://images.unsplash.com/photo-1544717302-de2939b7ef71?auto=format&fit=crop&w=1200&q=80",
+      alt: "Persona sujetando una rodilla dolorida"
+    },
+    {
+      i: "🌑",
+      t: "Ojeras Oscuras",
+      d: "Una señal reveladora en los sistemas de medicina tradicional de que la función renal necesita atención.",
+      img: "https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=1200&q=80",
+      alt: "Retrato en primer plano destacando ojeras oscuras"
+    }
   ]
 };
 

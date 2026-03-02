@@ -109,18 +109,22 @@ function deepGet(obj, path) {
 function renderSymptoms(id, items) {
   const el = document.getElementById(id);
   if (!el || !items) return;
-  const isLiver = id === 'liver-symptoms';
+  const variant = id === 'liver-symptoms'
+    ? 'liver'
+    : id === 'kidney-symptoms'
+      ? 'kidney'
+      : '';
 
   el.innerHTML = items.map(s => {
-    if (isLiver && s.img) {
+    if (variant && s.img) {
       return `
-        <div class="symptom-card symptom-card-liver">
+        <div class="symptom-card symptom-card-${variant}">
           <div class="symptom-media">
             <img src="${escAttr(s.img)}" alt="${escAttr(s.alt || s.t)}" loading="lazy" decoding="async" />
             <div class="symptom-media-overlay"></div>
             <span class="symptom-icon-badge" aria-hidden="true">${s.i}</span>
           </div>
-          <div class="symptom-liver-body">
+          <div class="symptom-rich-body">
             <div class="symptom-title">${escHtml(s.t)}</div>
             <div class="symptom-desc">${escHtml(s.d)}</div>
           </div>
