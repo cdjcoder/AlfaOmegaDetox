@@ -1048,40 +1048,59 @@ body {
   gap: 18px;
 }
 .tip-card {
-  --tip-accent: var(--em-500);
-  display: flex;
-  gap: 14px;
-  align-items: flex-start;
-  background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+  background: #fff;
   border: 1px solid var(--gr-200);
-  border-left: 4px solid var(--tip-accent);
-  border-radius: var(--r-md);
-  padding: 18px 20px;
-  transition: transform .2s, border-color .2s, box-shadow .2s;
-}
-.tip-card:nth-child(1) { --tip-accent: #0ea5e9; }
-.tip-card:nth-child(2) { --tip-accent: #10b981; }
-.tip-card:nth-child(3) { --tip-accent: #f97316; }
-.tip-card:nth-child(4) { --tip-accent: #6366f1; }
-.tip-card:hover {
-  transform: translateY(-3px);
-  border-color: rgba(16,185,129,.4);
+  border-top: 4px solid var(--tip-accent, var(--em-500));
+  border-radius: var(--r-lg);
+  overflow: hidden;
   box-shadow: var(--shadow-sm);
+  transition: transform .25s, border-color .25s, box-shadow .25s;
 }
-.tip-icon {
-  width: 36px;
-  height: 36px;
+.tip-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(16,185,129,.4);
+  box-shadow: var(--shadow-lg);
+}
+.tip-media {
+  position: relative;
+  height: 138px;
+  overflow: hidden;
+  background: linear-gradient(140deg, var(--tip-accent, var(--em-500)) 0%, #111827 100%);
+}
+.tip-media img,
+.tip-media-fallback {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.tip-media img { transition: transform .7s ease; }
+.tip-card:hover .tip-media img { transform: scale(1.08); }
+.tip-media-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(15,23,42,.06) 0%, rgba(15,23,42,.38) 100%),
+    linear-gradient(45deg, rgba(255,255,255,.15), transparent 50%);
+}
+.tip-icon-badge {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  width: 38px;
+  height: 38px;
   border-radius: 10px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   font-size: 21px;
-  background: rgba(255,255,255,.95);
-  border: 1px solid var(--gr-200);
-  box-shadow: 0 4px 12px rgba(0,0,0,.08);
-  flex-shrink: 0;
+  background: rgba(255,255,255,.96);
+  box-shadow: 0 6px 18px rgba(0,0,0,.22);
 }
-.tip-title { font-size: 14px; font-weight: 700; color: var(--gr-800); margin-bottom: 5px; }
+.tip-content {
+  padding: 16px 18px 18px;
+}
+.tip-title { font-size: 14px; font-weight: 800; color: var(--gr-800); margin-bottom: 6px; line-height: 1.35; }
 .tip-desc  { font-size: 12.5px; color: var(--gr-500); line-height: 1.56; }
 
 /* ============================================================

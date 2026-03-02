@@ -687,16 +687,64 @@ const SEASONS = {
 
 const PROTO_TIPS = {
   en: [
-    ["💧", "Drink plenty of filtered water", "Hydration amplifies every ingredient's effect"],
-    ["🥗", "Eat light, plant-forward meals", "Reduce the liver's processing load during the cleanse"],
-    ["🚫", "Minimise alcohol", "Let your liver focus entirely on restoration"],
-    ["😴", "Prioritise rest", "The liver does its deepest repair work overnight"]
+    {
+      icon: "💧",
+      title: "Drink plenty of filtered water",
+      desc: "Hydration amplifies every ingredient's effect",
+      img: "https://images.unsplash.com/photo-1523362628745-0c100150b504?auto=format&fit=crop&w=1200&q=80",
+      alt: "Clean water being poured into a glass"
+    },
+    {
+      icon: "🥗",
+      title: "Eat light, plant-forward meals",
+      desc: "Reduce the liver's processing load during the cleanse",
+      img: "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=80",
+      alt: "Fresh plant-forward meal with vegetables and grains"
+    },
+    {
+      icon: "🚫",
+      title: "Minimise alcohol",
+      desc: "Let your liver focus entirely on restoration",
+      img: "https://images.unsplash.com/photo-1497534446932-c925b458314e?auto=format&fit=crop&w=1200&q=80",
+      alt: "Alcoholic drinks on a bar counter representing consumption to avoid"
+    },
+    {
+      icon: "😴",
+      title: "Prioritise rest",
+      desc: "The liver does its deepest repair work overnight",
+      img: "https://images.unsplash.com/photo-1494390248081-4e521a5940db?auto=format&fit=crop&w=1200&q=80",
+      alt: "Person sleeping peacefully in a dark calm bedroom"
+    }
   ],
   es: [
-    ["💧", "Bebe suficiente agua filtrada", "La hidratación amplifica el efecto de cada ingrediente"],
-    ["🥗", "Come comidas ligeras y vegetales", "Reduce la carga de procesamiento del hígado durante la limpieza"],
-    ["🚫", "Minimiza el alcohol", "Deja que tu hígado se enfoque completamente en la restauración"],
-    ["😴", "Prioriza el descanso", "El hígado realiza su reparación más profunda durante la noche"]
+    {
+      icon: "💧",
+      title: "Bebe suficiente agua filtrada",
+      desc: "La hidratación amplifica el efecto de cada ingrediente",
+      img: "https://images.unsplash.com/photo-1523362628745-0c100150b504?auto=format&fit=crop&w=1200&q=80",
+      alt: "Agua limpia sirviéndose en un vaso"
+    },
+    {
+      icon: "🥗",
+      title: "Come comidas ligeras y vegetales",
+      desc: "Reduce la carga de procesamiento del hígado durante la limpieza",
+      img: "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=80",
+      alt: "Comida fresca a base de vegetales y granos"
+    },
+    {
+      icon: "🚫",
+      title: "Minimiza el alcohol",
+      desc: "Deja que tu hígado se enfoque completamente en la restauración",
+      img: "https://images.unsplash.com/photo-1497534446932-c925b458314e?auto=format&fit=crop&w=1200&q=80",
+      alt: "Bebidas alcohólicas en una barra, representando el consumo a evitar"
+    },
+    {
+      icon: "😴",
+      title: "Prioriza el descanso",
+      desc: "El hígado realiza su reparación más profunda durante la noche",
+      img: "https://images.unsplash.com/photo-1494390248081-4e521a5940db?auto=format&fit=crop&w=1200&q=80",
+      alt: "Persona durmiendo tranquilamente en una habitación oscura y serena"
+    }
   ]
 };
 

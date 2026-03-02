@@ -50,6 +50,12 @@ const SEASON_ACCENTS = [
   '#f59e0b',
   '#f97316',
 ];
+const TIP_ACCENTS = [
+  '#0ea5e9',
+  '#10b981',
+  '#f97316',
+  '#6366f1',
+];
 
 // ============================================================
 // CORE RENDER
@@ -218,15 +224,28 @@ function renderSeasons(items) {
 function renderTips(items) {
   const el = document.getElementById('tips-list');
   if (!el || !items) return;
-  el.innerHTML = items.map(([icon, title, desc]) => `
-    <div class="tip-card">
-      <span class="tip-icon" aria-hidden="true">${icon}</span>
-      <div>
-        <div class="tip-title">${escHtml(title)}</div>
-        <div class="tip-desc">${escHtml(desc)}</div>
+  el.innerHTML = items.map((item, i) => {
+    const tip = Array.isArray(item)
+      ? { icon: item[0], title: item[1], desc: item[2] }
+      : item;
+    const media = tip.img
+      ? `<img src="${escAttr(tip.img)}" alt="${escAttr(tip.alt || tip.title)}" loading="lazy" decoding="async" />`
+      : '<div class="tip-media-fallback" aria-hidden="true"></div>';
+
+    return `
+      <div class="tip-card" style="--tip-accent:${TIP_ACCENTS[i % TIP_ACCENTS.length]};">
+        <div class="tip-media">
+          ${media}
+          <div class="tip-media-overlay"></div>
+          <span class="tip-icon-badge" aria-hidden="true">${escHtml(tip.icon || '✨')}</span>
+        </div>
+        <div class="tip-content">
+          <div class="tip-title">${escHtml(tip.title || '')}</div>
+          <div class="tip-desc">${escHtml(tip.desc || '')}</div>
+        </div>
       </div>
-    </div>
-  `).join('');
+    `;
+  }).join('');
 }
 
 function renderResults(items) {
