@@ -492,20 +492,92 @@ const PROTO_TIPS = {
 
 const RESULTS = {
   en: [
-    { t: "Clearer, More Radiant Skin", d: "As the liver and kidneys begin clearing what was exiting through your pores.", emoji: "✨" },
-    { t: "Return of Natural Energy", d: "Clean, sustained vitality — not the stimulant kind. The kind that comes from a body running efficiently.", emoji: "⚡" },
-    { t: "Mental Clarity & Focus", d: "Brain fog lifts when the internal chemical load lightens.", emoji: "🧠" },
-    { t: "Lighter, Less Bloated", d: "As bile flow improves, digestion becomes more comfortable and efficient.", emoji: "🌿" },
-    { t: "Reduced Puffiness", d: "Kidneys clearing waste more efficiently — visible in your face and ankles.", emoji: "💧" },
-    { t: "Better Quality Sleep", d: "A calmer, less toxic internal environment supports deeper, more restorative rest.", emoji: "😴" }
+    {
+      t: "Clearer, More Radiant Skin",
+      d: "As the liver and kidneys begin clearing what was exiting through your pores.",
+      emoji: "✨",
+      img: "https://images.unsplash.com/photo-1485841890310-6a055c88698a?auto=format&fit=crop&w=1200&q=80",
+      alt: "Woman with healthy, radiant skin in natural light"
+    },
+    {
+      t: "Return of Natural Energy",
+      d: "Clean, sustained vitality — not the stimulant kind. The kind that comes from a body running efficiently.",
+      emoji: "⚡",
+      img: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1200&q=80",
+      alt: "Active woman jogging outdoors with energy"
+    },
+    {
+      t: "Mental Clarity & Focus",
+      d: "Brain fog lifts when the internal chemical load lightens.",
+      emoji: "🧠",
+      img: "https://images.unsplash.com/photo-1456324504439-367cee3b3c32?auto=format&fit=crop&w=1200&q=80",
+      alt: "Focused person working clearly at a desk"
+    },
+    {
+      t: "Lighter, Less Bloated",
+      d: "As bile flow improves, digestion becomes more comfortable and efficient.",
+      emoji: "🌿",
+      img: "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=80",
+      alt: "Healthy clean meal with fresh greens and grains"
+    },
+    {
+      t: "Reduced Puffiness",
+      d: "Kidneys clearing waste more efficiently — visible in your face and ankles.",
+      emoji: "💧",
+      img: "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=1200&q=80",
+      alt: "Clear flowing water symbolizing hydration and drainage"
+    },
+    {
+      t: "Better Quality Sleep",
+      d: "A calmer, less toxic internal environment supports deeper, more restorative rest.",
+      emoji: "😴",
+      img: "https://images.unsplash.com/photo-1494390248081-4e521a5940db?auto=format&fit=crop&w=1200&q=80",
+      alt: "Person sleeping peacefully in a calm bedroom"
+    }
   ],
   es: [
-    { t: "Piel Más Clara y Radiante", d: "A medida que el hígado y los riñones comienzan a eliminar lo que salía por tus poros.", emoji: "✨" },
-    { t: "Retorno de la Energía Natural", d: "Vitalidad limpia y sostenida — no el tipo de estimulante. El tipo que proviene de un cuerpo que funciona eficientemente.", emoji: "⚡" },
-    { t: "Claridad Mental y Enfoque", d: "La niebla mental se levanta cuando la carga química interna se aligera.", emoji: "🧠" },
-    { t: "Más Ligero, Menos Hinchado", d: "A medida que mejora el flujo de bilis, la digestión se vuelve más cómoda y eficiente.", emoji: "🌿" },
-    { t: "Reducción de la Hinchazón", d: "Los riñones eliminan los residuos más eficientemente — visible en tu cara y tobillos.", emoji: "💧" },
-    { t: "Mejor Calidad de Sueño", d: "Un ambiente interno más tranquilo y menos tóxico apoya un descanso más profundo y restaurador.", emoji: "😴" }
+    {
+      t: "Piel Más Clara y Radiante",
+      d: "A medida que el hígado y los riñones comienzan a eliminar lo que salía por tus poros.",
+      emoji: "✨",
+      img: "https://images.unsplash.com/photo-1485841890310-6a055c88698a?auto=format&fit=crop&w=1200&q=80",
+      alt: "Mujer con piel saludable y radiante bajo luz natural"
+    },
+    {
+      t: "Retorno de la Energía Natural",
+      d: "Vitalidad limpia y sostenida — no el tipo de estimulante. El tipo que proviene de un cuerpo que funciona eficientemente.",
+      emoji: "⚡",
+      img: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1200&q=80",
+      alt: "Mujer corriendo al aire libre con energía"
+    },
+    {
+      t: "Claridad Mental y Enfoque",
+      d: "La niebla mental se levanta cuando la carga química interna se aligera.",
+      emoji: "🧠",
+      img: "https://images.unsplash.com/photo-1456324504439-367cee3b3c32?auto=format&fit=crop&w=1200&q=80",
+      alt: "Persona concentrada trabajando con claridad en un escritorio"
+    },
+    {
+      t: "Más Ligero, Menos Hinchado",
+      d: "A medida que mejora el flujo de bilis, la digestión se vuelve más cómoda y eficiente.",
+      emoji: "🌿",
+      img: "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=80",
+      alt: "Comida saludable y limpia con vegetales frescos y granos"
+    },
+    {
+      t: "Reducción de la Hinchazón",
+      d: "Los riñones eliminan los residuos más eficientemente — visible en tu cara y tobillos.",
+      emoji: "💧",
+      img: "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=1200&q=80",
+      alt: "Agua clara fluyendo, simbolizando hidratación y drenaje"
+    },
+    {
+      t: "Mejor Calidad de Sueño",
+      d: "Un ambiente interno más tranquilo y menos tóxico apoya un descanso más profundo y restaurador.",
+      emoji: "😴",
+      img: "https://images.unsplash.com/photo-1494390248081-4e521a5940db?auto=format&fit=crop&w=1200&q=80",
+      alt: "Persona durmiendo tranquilamente en una habitación serena"
+    }
   ]
 };
 

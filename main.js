@@ -37,6 +37,14 @@ const RESULT_BKGS = [
   'linear-gradient(145deg,#cffafe,#a5f3fc)',
   'linear-gradient(145deg,#e0e7ff,#c7d2fe)',
 ];
+const RESULT_ACCENTS = [
+  '#10b981',
+  '#eab308',
+  '#3b82f6',
+  '#16a34a',
+  '#06b6d4',
+  '#6366f1',
+];
 
 // ============================================================
 // CORE RENDER
@@ -182,17 +190,27 @@ function renderTips(items) {
 function renderResults(items) {
   const el = document.getElementById('results-list');
   if (!el || !items) return;
-  el.innerHTML = items.map((r, i) => `
-    <div class="result-card">
-      <div class="result-thumb" style="background:${RESULT_BKGS[i % RESULT_BKGS.length]};" aria-hidden="true">
-        <span style="font-size:62px;">${r.emoji}</span>
+  el.innerHTML = items.map((r, i) => {
+    const fallbackBg = RESULT_BKGS[i % RESULT_BKGS.length];
+    const accent = RESULT_ACCENTS[i % RESULT_ACCENTS.length];
+    const media = r.img
+      ? `<img src="${escAttr(r.img)}" alt="${escAttr(r.alt || r.t)}" loading="lazy" decoding="async" />`
+      : `<div class="result-media-fallback" style="background:${fallbackBg};" aria-hidden="true"></div>`;
+
+    return `
+      <div class="result-card" style="--result-accent:${accent};">
+        <div class="result-media">
+          ${media}
+          <div class="result-media-overlay"></div>
+          <span class="result-emoji-badge" aria-hidden="true">${r.emoji}</span>
+        </div>
+        <div class="result-body">
+          <div class="result-title">${escHtml(r.t)}</div>
+          <div class="result-desc">${escHtml(r.d)}</div>
+        </div>
       </div>
-      <div class="result-body">
-        <div class="result-title">${escHtml(r.t)}</div>
-        <div class="result-desc">${escHtml(r.d)}</div>
-      </div>
-    </div>
-  `).join('');
+    `;
+  }).join('');
 }
 
 function renderBulletList(id, items) {
