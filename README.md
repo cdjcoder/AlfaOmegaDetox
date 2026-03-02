@@ -1,6 +1,6 @@
-# 🌿 Botanical Juice Cleanse — Recreation
+# 🌿 Alfa Omega Detox — Recreation
 
-A high-fidelity static-website recreation of the Botanical Juice Cleanse landing page originally at `https://l1zyqfsjd2.space.minimax.io`.
+A high-fidelity static-website recreation of the Alfa Omega Detox landing page originally at `https://l1zyqfsjd2.space.minimax.io`.
 
 ---
 

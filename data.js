@@ -4,7 +4,8 @@
 
 const TRANSLATIONS = {
   en: {
-    badge: "Botanical Juice Cleanse · 2–3× Per Year",
+    navBrand: "Alfa Omega Detox",
+    badge: "Alfa Omega Detox · 2–3× Per Year",
     heroH1a: "Your Body Filters",
     heroH1b: "Everything.",
     heroH2: "When's the Last Time You Gave It a Break?",
@@ -106,7 +107,8 @@ const TRANSLATIONS = {
     emailNote: "✉️ Your email app should have opened with your order details. Please send that email to complete your reservation."
   },
   es: {
-    badge: "Limpieza Botánica de Jugos · 2–3× al Año",
+    navBrand: "Alfa Omega Detox",
+    badge: "Alfa Omega Detox · 2–3× al Año",
     heroH1a: "Tu Cuerpo Filtra",
     heroH1b: "Todo.",
     heroH2: "¿Cuándo Fue la Última Vez Que Le Diste un Descanso?",
