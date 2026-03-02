@@ -1122,6 +1122,34 @@ body {
   .nav-cta { display: inline-flex; }
 }
 
+/* Prevent hero visual overlap with main hero copy */
+@media (min-width: 1101px) {
+  .hero-container {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 340px;
+    column-gap: clamp(20px, 3vw, 56px);
+    align-items: center;
+  }
+  .hero-content {
+    grid-column: 1;
+    justify-self: center;
+    width: 100%;
+    max-width: 720px;
+  }
+  .hero-visual {
+    position: relative;
+    grid-column: 2;
+    justify-self: end;
+    top: auto;
+    right: auto;
+    transform: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .hero-visual { display: none; }
+}
+
 @media (max-width: 1024px) {
   .seasons-grid { grid-template-columns: repeat(2, 1fr); }
   .bigger-cols  { grid-template-columns: 1fr; }
