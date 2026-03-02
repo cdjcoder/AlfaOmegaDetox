@@ -718,29 +718,94 @@ body {
 /* ============================================================
    SYNERGY
 ============================================================ */
+#synergy-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse 45% 40% at 8% 10%, rgba(109,40,217,.08) 0%, transparent 70%),
+    radial-gradient(ellipse 35% 35% at 92% 12%, rgba(16,185,129,.10) 0%, transparent 75%),
+    linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+}
+#synergy-section .container { position: relative; z-index: 1; }
+
 .synergy-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 22px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
 }
 .synergy-card {
+  background: #fff;
+  border: 1px solid var(--gr-200);
+  border-top: 5px solid var(--synergy-accent, var(--em-600));
   border-radius: var(--r-lg);
-  padding: 28px;
-  color: #fff;
-  transition: transform .2s, box-shadow .2s;
+  box-shadow: var(--shadow-md);
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition: transform .25s, box-shadow .25s, border-color .25s;
+}
+.synergy-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--gr-300);
+}
+
+.synergy-media {
+  height: 180px;
+  background: linear-gradient(140deg, var(--synergy-accent, var(--em-600)) 0%, #111827 100%);
   position: relative;
   overflow: hidden;
 }
-.synergy-card::before {
+.synergy-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .6s ease;
+}
+.synergy-card:hover .synergy-media img { transform: scale(1.06); }
+.synergy-media::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(160deg, rgba(255,255,255,.08) 0%, transparent 60%);
+  background:
+    linear-gradient(180deg, rgba(17,24,39,.05) 0%, rgba(17,24,39,.35) 100%),
+    linear-gradient(45deg, rgba(255,255,255,.15), transparent 45%);
 }
-.synergy-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
-.synergy-icon  { font-size: 36px; margin-bottom: 14px; display: block; position: relative; z-index: 1; }
-.synergy-title { font-size: 17px; font-weight: 800; margin-bottom: 12px; color: #fff; position: relative; z-index: 1; }
-.synergy-text  { font-size: 13.5px; line-height: 1.65; opacity: .88; position: relative; z-index: 1; }
+
+.synergy-content {
+  padding: 20px 22px 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.synergy-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  margin-bottom: 12px;
+  background: #fff;
+  border: 1px solid var(--gr-200);
+  box-shadow: 0 4px 14px rgba(0,0,0,.08);
+}
+.synergy-title {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: var(--gr-900);
+  line-height: 1.25;
+}
+.synergy-text {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--gr-600);
+}
 
 /* ============================================================
    PROTOCOL — seasons & tips
