@@ -545,8 +545,8 @@ const KIDNEY_SYMPTOMS = {
       i: "💧",
       t: "Fluid Retention & Puffiness",
       d: "Swollen ankles, puffy eyes, and a waterlogged heaviness signal kidneys aren't clearing fluid efficiently.",
-      img: "https://images.unsplash.com/photo-1595488711748-f1f0f8f0b3ca?auto=format&fit=crop&w=1200&q=80",
-      alt: "Close-up portrait emphasizing facial puffiness and fluid retention"
+      img: "https://images.unsplash.com/photo-1519824145371-296894a0daa9?auto=format&fit=crop&w=1200&q=80",
+      alt: "Portrait emphasizing under-eye puffiness and fluid retention signs"
     },
     {
       i: "🩺",
@@ -589,8 +589,8 @@ const KIDNEY_SYMPTOMS = {
       i: "💧",
       t: "Retención de Líquidos e Hinchazón",
       d: "Los tobillos hinchados, los ojos hinchados y la pesadez anegada indican que los riñones no están eliminando el líquido eficientemente.",
-      img: "https://images.unsplash.com/photo-1595488711748-f1f0f8f0b3ca?auto=format&fit=crop&w=1200&q=80",
-      alt: "Retrato en primer plano que enfatiza hinchazón facial y retención de líquidos"
+      img: "https://images.unsplash.com/photo-1519824145371-296894a0daa9?auto=format&fit=crop&w=1200&q=80",
+      alt: "Retrato que enfatiza ojeras hinchadas y señales de retención de líquidos"
     },
     {
       i: "🩺",
