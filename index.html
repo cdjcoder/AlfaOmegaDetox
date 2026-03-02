@@ -302,80 +302,9 @@
 
         <!-- Right panel: form -->
         <div class="order-right fade-in delay-2">
-          <div id="order-form-container">
-            <form id="order-form" novalidate>
-              <div class="form-group">
-                <label class="form-label" data-key="formName">Full Name</label>
-                <input type="text" name="name" class="form-input" required autocomplete="name" placeholder="Jane Smith" />
-              </div>
-              <div class="form-row">
-                <div class="form-group">
-                  <label class="form-label" data-key="formEmail">Email Address</label>
-                  <input type="email" name="email" class="form-input" required autocomplete="email" placeholder="jane@email.com" />
-                </div>
-                <div class="form-group">
-                  <label class="form-label" data-key="formPhone">Phone (optional)</label>
-                  <input type="tel" name="phone" class="form-input" autocomplete="tel" placeholder="+1 555 000 0000" />
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="form-label" data-key="formAddress">Shipping Address</label>
-                <input type="text" name="address" class="form-input" required autocomplete="street-address" placeholder="123 Main St" />
-              </div>
-              <div class="form-row">
-                <div class="form-group">
-                  <label class="form-label" data-key="formCity">City</label>
-                  <input type="text" name="city" class="form-input" required autocomplete="address-level2" placeholder="New York" />
-                </div>
-                <div class="form-group">
-                  <label class="form-label" data-key="formState">State / Province</label>
-                  <input type="text" name="state" class="form-input" required autocomplete="address-level1" placeholder="NY" />
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group">
-                  <label class="form-label" data-key="formZip">ZIP / Postal Code</label>
-                  <input type="text" name="zip" class="form-input" required autocomplete="postal-code" placeholder="10001" />
-                </div>
-                <div class="form-group">
-                  <label class="form-label" data-key="formCountry">Country</label>
-                  <input type="text" name="country" class="form-input" required autocomplete="country-name" placeholder="United States" />
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group">
-                  <label class="form-label" data-key="formQty">Quantity</label>
-                  <select name="qty" class="form-input form-select" id="qty-select">
-                    <option value="1">1 kit — $98</option>
-                    <option value="2">2 kits — $196</option>
-                    <option value="3">3 kits — $294</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label class="form-label" data-key="formSeason">Preferred Season</label>
-                  <select name="season" class="form-input form-select" id="season-select">
-                    <option value="">— Select —</option>
-                  </select>
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="form-label" data-key="formNotes">Special Notes (optional)</label>
-                <textarea name="notes" class="form-input form-textarea" rows="3" placeholder="Any notes or preferences..."></textarea>
-              </div>
-
-              <div class="order-total-row">
-                <span class="order-total-label" id="total-label" data-key="orderTotalLabel">Order Total:</span>
-                <span class="order-total-value" id="order-total-display">$98.00</span>
-              </div>
-
-              <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
-                <span data-key="formSubmit">Complete My Reservation — $98</span>
-              </button>
-              <p class="form-secure-note" data-key="formSecure">🔒 Your information is secure and will never be shared.</p>
-            </form>
+          <div class="jotform-embed-wrap" id="order-form-container">
+            <script type="text/javascript" src="https://form.jotform.com/jsform/260597174818065"></script>
           </div>
-
-          <div id="order-success" style="display:none;"></div>
         </div>
 
       </div>

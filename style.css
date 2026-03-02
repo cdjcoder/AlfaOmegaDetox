@@ -1033,6 +1033,23 @@ body {
   align-items: start;
 }
 .order-subtext { font-size: 14px; color: var(--gr-500); margin-bottom: 28px; line-height: 1.5; }
+.jotform-embed-wrap {
+  background: #fff;
+  border: 1px solid var(--gr-200);
+  border-radius: var(--r-xl);
+  padding: 10px;
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+.jotform-embed-wrap iframe,
+.jotform-embed-wrap .jfIframe {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-height: 760px;
+  border: 0;
+  display: block;
+  border-radius: var(--r-lg);
+}
 
 .includes-box {
   background: var(--em-50);
