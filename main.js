@@ -104,15 +104,35 @@ function deepGet(obj, path) {
 function renderSymptoms(id, items) {
   const el = document.getElementById(id);
   if (!el || !items) return;
-  el.innerHTML = items.map(s => `
-    <div class="symptom-card">
-      <span class="symptom-icon" aria-hidden="true">${s.i}</span>
-      <div>
-        <div class="symptom-title">${s.t}</div>
-        <div class="symptom-desc">${s.d}</div>
+  const isLiver = id === 'liver-symptoms';
+
+  el.innerHTML = items.map(s => {
+    if (isLiver && s.img) {
+      return `
+        <div class="symptom-card symptom-card-liver">
+          <div class="symptom-media">
+            <img src="${escAttr(s.img)}" alt="${escAttr(s.alt || s.t)}" loading="lazy" decoding="async" />
+            <div class="symptom-media-overlay"></div>
+            <span class="symptom-icon-badge" aria-hidden="true">${s.i}</span>
+          </div>
+          <div class="symptom-liver-body">
+            <div class="symptom-title">${escHtml(s.t)}</div>
+            <div class="symptom-desc">${escHtml(s.d)}</div>
+          </div>
+        </div>
+      `;
+    }
+
+    return `
+      <div class="symptom-card">
+        <span class="symptom-icon" aria-hidden="true">${s.i}</span>
+        <div>
+          <div class="symptom-title">${escHtml(s.t)}</div>
+          <div class="symptom-desc">${escHtml(s.d)}</div>
+        </div>
       </div>
-    </div>
-  `).join('');
+    `;
+  }).join('');
 }
 
 function renderIngredients(items) {
