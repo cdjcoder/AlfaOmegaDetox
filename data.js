@@ -560,14 +560,56 @@ const KIDNEY_SYMPTOMS = {
 
 const SEASONS = {
   en: [
-    { icon: "🌸", label: "Spring", months: "March – April", desc: "After the heavier eating of winter — a natural renewal season when the body is primed to shed and reset." },
-    { icon: "☀️", label: "Late Summer", months: "July – August", desc: "Mid-year reset before the holiday season. Recalibrate before indulgence season arrives." },
-    { icon: "🍂", label: "Autumn", months: "October – November", desc: "Before cold, flu season, and festive eating. Build your resilience from within." }
+    {
+      icon: "🌸",
+      label: "Spring",
+      months: "March – April",
+      desc: "After the heavier eating of winter — a natural renewal season when the body is primed to shed and reset.",
+      img: "https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1400&q=80",
+      alt: "Spring blossoms and fresh botanical growth"
+    },
+    {
+      icon: "☀️",
+      label: "Late Summer",
+      months: "July – August",
+      desc: "Mid-year reset before the holiday season. Recalibrate before indulgence season arrives.",
+      img: "https://images.unsplash.com/photo-1437624155766-b64bf17eb2ce?auto=format&fit=crop&w=1400&q=80",
+      alt: "Golden late-summer meadow under warm sunlight"
+    },
+    {
+      icon: "🍂",
+      label: "Autumn",
+      months: "October – November",
+      desc: "Before cold, flu season, and festive eating. Build your resilience from within.",
+      img: "https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=1400&q=80",
+      alt: "Autumn foliage with rich orange and red leaves"
+    }
   ],
   es: [
-    { icon: "🌸", label: "Primavera", months: "Marzo – Abril", desc: "Después de la alimentación más pesada del invierno — una estación de renovación natural cuando el cuerpo está listo para desprenderse y reiniciarse." },
-    { icon: "☀️", label: "Finales de Verano", months: "Julio – Agosto", desc: "Reinicio a mitad de año antes de la temporada navideña. Recalibra antes de que llegue la temporada de indulgencias." },
-    { icon: "🍂", label: "Otoño", months: "Octubre – Noviembre", desc: "Antes de la temporada de resfriados, gripe y comidas festivas. Construye tu resiliencia desde adentro." }
+    {
+      icon: "🌸",
+      label: "Primavera",
+      months: "Marzo – Abril",
+      desc: "Después de la alimentación más pesada del invierno — una estación de renovación natural cuando el cuerpo está listo para desprenderse y reiniciarse.",
+      img: "https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1400&q=80",
+      alt: "Flores de primavera y crecimiento botánico fresco"
+    },
+    {
+      icon: "☀️",
+      label: "Finales de Verano",
+      months: "Julio – Agosto",
+      desc: "Reinicio a mitad de año antes de la temporada navideña. Recalibra antes de que llegue la temporada de indulgencias.",
+      img: "https://images.unsplash.com/photo-1437624155766-b64bf17eb2ce?auto=format&fit=crop&w=1400&q=80",
+      alt: "Pradera dorada de finales de verano bajo luz cálida"
+    },
+    {
+      icon: "🍂",
+      label: "Otoño",
+      months: "Octubre – Noviembre",
+      desc: "Antes de la temporada de resfriados, gripe y comidas festivas. Construye tu resiliencia desde adentro.",
+      img: "https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=1400&q=80",
+      alt: "Follaje de otoño en tonos anaranjados y rojizos"
+    }
   ]
 };
 

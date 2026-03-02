@@ -45,6 +45,11 @@ const RESULT_ACCENTS = [
   '#06b6d4',
   '#6366f1',
 ];
+const SEASON_ACCENTS = [
+  '#ec4899',
+  '#f59e0b',
+  '#f97316',
+];
 
 // ============================================================
 // CORE RENDER
@@ -183,14 +188,27 @@ function renderSynergy(items) {
 function renderSeasons(items) {
   const el = document.getElementById('seasons-list');
   if (!el || !items) return;
-  el.innerHTML = items.map(s => `
-    <div class="season-card">
-      <span class="season-icon" aria-hidden="true">${s.icon}</span>
-      <div class="season-label">${escHtml(s.label)}</div>
-      <div class="season-months">${escHtml(s.months)}</div>
-      <div class="season-desc">${escHtml(s.desc)}</div>
-    </div>
-  `).join('');
+  el.innerHTML = items.map((s, i) => {
+    const accent = SEASON_ACCENTS[i % SEASON_ACCENTS.length];
+    const media = s.img
+      ? `<img src="${escAttr(s.img)}" alt="${escAttr(s.alt || s.label)}" loading="lazy" decoding="async" />`
+      : '<div class="season-media-fallback" aria-hidden="true"></div>';
+
+    return `
+      <div class="season-card" style="--season-accent:${accent};">
+        <div class="season-media">
+          ${media}
+          <div class="season-media-overlay"></div>
+          <span class="season-icon-badge" aria-hidden="true">${s.icon}</span>
+        </div>
+        <div class="season-content">
+          <div class="season-label">${escHtml(s.label)}</div>
+          <div class="season-months">${escHtml(s.months)}</div>
+          <div class="season-desc">${escHtml(s.desc)}</div>
+        </div>
+      </div>
+    `;
+  }).join('');
 }
 
 function renderTips(items) {
