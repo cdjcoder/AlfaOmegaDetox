@@ -148,6 +148,31 @@ body {
   gap: 16px;
 }
 
+.nav-call {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: var(--r-md);
+  background: var(--bl-600);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: 1;
+  min-height: 36px;
+  box-shadow: 0 6px 18px rgba(37,99,235,.26);
+  transition: background .18s, transform .18s, box-shadow .18s;
+}
+.nav-call:hover {
+  background: var(--bl-700);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(29,78,216,.28);
+}
+.nav-call-icon { font-size: 14px; line-height: 1; }
+.nav-call-short { display: none; }
+
 /* Language buttons */
 .lang-buttons { display: flex; gap: 6px; }
 .lang-btn {
@@ -1570,6 +1595,19 @@ body {
 
 @media (max-width: 860px) {
   :root { --section-py: 72px; }
+  .nav-inner { padding: 0 18px; gap: 10px; }
+  .nav-right { gap: 8px; }
+  .nav-brand-text { display: none; }
+  .lang-buttons { gap: 4px; }
+  .lang-btn {
+    padding: 6px 10px;
+    min-width: 38px;
+  }
+  .nav-call {
+    padding: 8px 12px;
+    font-size: 12px;
+    min-height: 34px;
+  }
   .hero-visual    { display: none; }
   .hero-content   {
     max-width: 100%;
@@ -1586,6 +1624,7 @@ body {
   .bigger-cols    { grid-template-columns: 1fr; }
   .form-row       { grid-template-columns: 1fr; }
   .zelle-reserve-box { grid-template-columns: 1fr; }
+  .zelle-reserve-image-wrap { min-height: 260px; }
   .hero-h1        { font-size: clamp(42px, 10vw, 70px); }
   .hero-stats     { flex-wrap: wrap; gap: 8px; }
   .hero-stat      { padding: 0 16px; }
@@ -1595,12 +1634,23 @@ body {
 @media (max-width: 480px) {
   :root { --section-py: 56px; }
   .container { padding: 0 18px; }
+  .nav-inner { padding: 0 12px; }
+  .nav-call {
+    padding: 8px 10px;
+    border-radius: 10px;
+  }
+  .nav-call-full { display: none; }
+  .nav-call-short { display: inline; }
   .hero-container { padding: 48px 18px 64px; }
   .hero-h1 { font-size: 40px; }
   .hero-stat-num { font-size: 24px; }
   .hero-ctas { flex-direction: column; align-items: flex-start; }
   .hero-ctas .btn { width: 100%; justify-content: center; }
   .section-title { font-size: 28px; }
+  .zelle-reserve-image-wrap {
+    min-height: 210px;
+    padding: 4px;
+  }
 }
 
 /* ============================================================
