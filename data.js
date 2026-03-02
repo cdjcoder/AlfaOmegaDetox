@@ -541,15 +541,71 @@ const BIG_KIDNEY_PTS = {
 
 const SYNERGY = {
   en: [
-    { icon: "🫀", title: "Liver & Detoxification", color: "bg-emerald-700", text: "Milk thistle, artichoke, and dandelion collectively increase bile production, protect liver cells, enhance antioxidant defences, and promote liver tissue regeneration. Shilajit adds mitochondrial energy support to keep detox pathways firing." },
-    { icon: "🫘", title: "Kidney & Urinary Support", color: "bg-blue-700", text: "Dandelion's diuretic action and artichoke's liver-load reduction ease the burden on the kidneys. Vitamin C and magnesium further support renal clearance and electrolyte regulation." },
-    { icon: "🛡️", title: "Antioxidant & Immune Defence", color: "bg-violet-700", text: "Vitamins C and E regenerate each other's antioxidant activity. Combined with polyphenols from aloe, yucca, dandelion, artichoke, silymarin, and shilajit's fulvic acid — free radical neutralisation operates on every cellular level." },
-    { icon: "💓", title: "Cardiovascular & Metabolic Health", color: "bg-rose-700", text: "Safflower oil's omega fatty acids, magnesium's blood pressure regulation, artichoke and dandelion's cholesterol-lowering effects, and aloe's blood sugar support combine for comprehensive metabolic protection." }
+    {
+      icon: "🫀",
+      title: "Liver & Detoxification",
+      color: "bg-emerald-700",
+      text: "Milk thistle, artichoke, and dandelion collectively increase bile production, protect liver cells, enhance antioxidant defences, and promote liver tissue regeneration. Shilajit adds mitochondrial energy support to keep detox pathways firing.",
+      img: "https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=1200&q=80",
+      alt: "Fresh detox herbs and green produce on a preparation table"
+    },
+    {
+      icon: "🫘",
+      title: "Kidney & Urinary Support",
+      color: "bg-blue-700",
+      text: "Dandelion's diuretic action and artichoke's liver-load reduction ease the burden on the kidneys. Vitamin C and magnesium further support renal clearance and electrolyte regulation.",
+      img: "https://images.unsplash.com/photo-1523362628745-0c100150b504?auto=format&fit=crop&w=1200&q=80",
+      alt: "Clean water being poured into a glass"
+    },
+    {
+      icon: "🛡️",
+      title: "Antioxidant & Immune Defence",
+      color: "bg-violet-700",
+      text: "Vitamins C and E regenerate each other's antioxidant activity. Combined with polyphenols from aloe, yucca, dandelion, artichoke, silymarin, and shilajit's fulvic acid — free radical neutralisation operates on every cellular level.",
+      img: "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=1200&q=80",
+      alt: "Colorful antioxidant-rich berries in a bowl"
+    },
+    {
+      icon: "💓",
+      title: "Cardiovascular & Metabolic Health",
+      color: "bg-rose-700",
+      text: "Safflower oil's omega fatty acids, magnesium's blood pressure regulation, artichoke and dandelion's cholesterol-lowering effects, and aloe's blood sugar support combine for comprehensive metabolic protection.",
+      img: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1200&q=80",
+      alt: "Heart-healthy whole foods arranged in a meal bowl"
+    }
   ],
   es: [
-    { icon: "🫀", title: "Hígado y Desintoxicación", color: "bg-emerald-700", text: "El cardo mariano, la alcachofa y el diente de león aumentan colectivamente la producción de bilis, protegen las células del hígado, mejoran las defensas antioxidantes y promueven la regeneración del tejido hepático. El shilajit añade soporte de energía mitocondrial para mantener activas las vías de desintoxicación." },
-    { icon: "🫘", title: "Apoyo Renal y Urinario", color: "bg-blue-700", text: "La acción diurética del diente de león y la reducción de la carga hepática de la alcachofa alivian la carga de los riñones. La vitamina C y el magnesio apoyan aún más la eliminación renal y la regulación de electrolitos." },
-    { icon: "🛡️", title: "Defensa Antioxidante e Inmunológica", color: "bg-violet-700", text: "Las vitaminas C y E regeneran mutuamente su actividad antioxidante. Combinadas con los polifenoles del aloe, la yuca, el diente de León, la alcachofa, la silimarina y el ácido fúlvico del shilajit — la neutralización de radicales libres opera en cada nivel celular." },
-    { icon: "💓", title: "Salud Cardiovascular y Metabólica", color: "bg-rose-700", text: "Los ácidos grasos omega del aceite de cártamo, la regulación de la presión arterial por el magnesio, los efectos reductores del colesterol de la alcachofa y el diente de León, y el apoyo al azúcar en sangre del aloe se combinan para una protección metabólica integral." }
+    {
+      icon: "🫀",
+      title: "Hígado y Desintoxicación",
+      color: "bg-emerald-700",
+      text: "El cardo mariano, la alcachofa y el diente de león aumentan colectivamente la producción de bilis, protegen las células del hígado, mejoran las defensas antioxidantes y promueven la regeneración del tejido hepático. El shilajit añade soporte de energía mitocondrial para mantener activas las vías de desintoxicación.",
+      img: "https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=1200&q=80",
+      alt: "Hierbas botánicas y vegetales verdes sobre una mesa de preparación"
+    },
+    {
+      icon: "🫘",
+      title: "Apoyo Renal y Urinario",
+      color: "bg-blue-700",
+      text: "La acción diurética del diente de león y la reducción de la carga hepática de la alcachofa alivian la carga de los riñones. La vitamina C y el magnesio apoyan aún más la eliminación renal y la regulación de electrolitos.",
+      img: "https://images.unsplash.com/photo-1523362628745-0c100150b504?auto=format&fit=crop&w=1200&q=80",
+      alt: "Agua limpia sirviéndose en un vaso"
+    },
+    {
+      icon: "🛡️",
+      title: "Defensa Antioxidante e Inmunológica",
+      color: "bg-violet-700",
+      text: "Las vitaminas C y E regeneran mutuamente su actividad antioxidante. Combinadas con los polifenoles del aloe, la yuca, el diente de León, la alcachofa, la silimarina y el ácido fúlvico del shilajit — la neutralización de radicales libres opera en cada nivel celular.",
+      img: "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=1200&q=80",
+      alt: "Frutos rojos ricos en antioxidantes en un recipiente"
+    },
+    {
+      icon: "💓",
+      title: "Salud Cardiovascular y Metabólica",
+      color: "bg-rose-700",
+      text: "Los ácidos grasos omega del aceite de cártamo, la regulación de la presión arterial por el magnesio, los efectos reductores del colesterol de la alcachofa y el diente de León, y el apoyo al azúcar en sangre del aloe se combinan para una protección metabólica integral.",
+      img: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1200&q=80",
+      alt: "Comida saludable para el corazón servida en un bowl"
+    }
   ]
 };

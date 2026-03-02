@@ -131,12 +131,22 @@ function renderSynergy(items) {
   const el = document.getElementById('synergy-list');
   if (!el || !items) return;
   el.innerHTML = items.map(s => {
-    const bg = SYN_COLORS[s.color] || '#374151';
+    const accent = SYN_COLORS[s.color] || '#374151';
+    const img = s.img ? `
+      <img
+        src="${escAttr(s.img)}"
+        alt="${escAttr(s.alt || s.title)}"
+        loading="lazy"
+        decoding="async"
+      />` : '';
     return `
-      <div class="synergy-card" style="background:${bg};">
-        <span class="synergy-icon" aria-hidden="true">${s.icon}</span>
-        <div class="synergy-title">${escHtml(s.title)}</div>
-        <div class="synergy-text">${escHtml(s.text)}</div>
+      <div class="synergy-card" style="--synergy-accent:${accent};">
+        <div class="synergy-media">${img}</div>
+        <div class="synergy-content">
+          <span class="synergy-icon" aria-hidden="true">${s.icon}</span>
+          <div class="synergy-title">${escHtml(s.title)}</div>
+          <div class="synergy-text">${escHtml(s.text)}</div>
+        </div>
       </div>
     `;
   }).join('');
